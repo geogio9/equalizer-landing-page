@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-mobile_img{
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+}
+
+.bg-tablet_img{
+    display: none;
+}
+
+.bg-desktop_img{
+    display: none;    
+}
+
+
+.bg-top{
+    display: none;
+}
+
+
+
+/************* header  ****************/
+
+.header{
+    margin: 40px 24px 166px;
+}
+
+/* .header-texts{
+    width: 100%;
+    max-width: 327px;
+} */
+
+.header-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 64px;
+    width: 327px;
+    
+    letter-spacing: -0.454545px;
+
+    color: #191826;
+}
+
+.header-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    width: 327px;
+
+    color: #191826;
+}
+
+/*************************** main ******************************/
+
+.main{
+    /* padding: 0 32px 200px; */
+    border-radius: 12px;
+    position: relative;
+    z-index: -1;
+
+    background: #191826;
+}
+
+.main-bg{
+    margin:0 30px 200px;
+    width: 280px;
+    height: 420px;
+}
+
+.main-app{
+    width: 208px;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    margin: -98px 85px auto 80px;
+
+}
+
+/****************** premium  ********************/
+
+
+.premium{
+    padding: 48px 36px;
+    border-radius: 12px;
+    width: 375px;
+    margin: -240px auto auto;
+    z-index: 1;
+
+    background-color:#FA7453 ;
+}
+
+.premium-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #FCFAF9;
+}
+.premium-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-top: 12px;
+
+    color: #FCFAF9;
+}
+.premium-middle {
+    margin: 36px 0 32px;
+    display: flex;
+    column-gap: 16px;
+    align-items:center;
+}
+.dollar {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+
+    color: #FCFAF9;
+}
+.month {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    
+    letter-spacing: -0.2px;
+
+
+    color: #FCFAF9;
+
+}
+
+
+.ios-button {
+    padding:15px 77px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    background: #191826;
+    transition: background 0.5s;
+}
+
+.ios-button:hover {
+    background: #66E2DC;
+    
+}
+
+
+.ios-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 8px;
+    
+    text-align: center;
+    letter-spacing: -0.18px;
+
+    color: #FCFAF9;
+}
+
+.android-button {
+    padding:15px 57px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    cursor: pointer;
+
+    background:#FCFAF9;
+    transition: background 0.5s;
+}
+
+.android-button:hover {
+    background: #FFB964;
+
+}
+
+
+
+.android-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 8px;
+    cursor: pointer;
+
+    
+    text-align: center;
+    letter-spacing: -0.18px;
+
+    color: #191826;
+}
+
+/********************** footer *******************/
+
+
+.footer{
+    padding: 64px 24px 80px;
+}
+
+.footer-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 298px;
+    margin: 32px 0 64px;
+
+    color: #191826;
+}
+.footer-mail{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    
+    color: #191826;
+}
+
+.icons{
+    display: flex;
+    column-gap: 20px;
+    cursor: pointer;
+    
+}
+.icon{
+    fill:#191826;
+}
+
+.icon:hover{
+    fill:#FA7453;
+    transition: all 0.5s;
+}
+
+
+/******************* respons ****************/
+
+
+@media (min-width: 768px ) {
+    .bg-mobile_img{
+        display: none;
+    }
+
+    .bg-tablet_img{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: -254px;
+        top: -112px;
+        width: 983px;
+        height: 808px;
+    }
+
+    .bg-top{
+        display: block;
+        position: absolute;
+        width: 267px;
+        height: 400px;
+        right: -30px;
+        top: -40px;
+    }
+
+    .header{
+        margin: 62px 40px 250px;
+    }
+    
+    /* .header-texts {
+        max-width: 520px;
+    } */
+
+
+    .header-title {
+        font-size: 64px;
+        line-height: 64px;
+        margin-top: 95px;
+        width: 520px;
+        
+        letter-spacing: -0.727273px;
+    }
+    .header-text {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 28px;
+        width: 514px;
+    }
+
+    .main{
+        margin: 0 40px;
+    }
+
+    .main-bg{
+        margin: 0 187px 211px 229px;
+    }
+
+    .main-app{
+        width: 270px;
+        height: 556px;
+        margin: -138px 361px 182px 64px;
+    }
+
+    .premium{
+        padding: 48px;
+        width: 400px;
+        margin: -464px 58px auto 277px;
+    }
+
+    .footer{
+        padding: 87px 40px 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-text{
+        margin: 32px auto auto;
+    }
+
+
+}
+
+@media (min-width: 1140px) {
+
+    .bg-tablet_img{
+        display: none;
+    }
+
+    .bg-desktop_img{
+        display: block;
+        position: absolute;
+        top: -232px;
+        left: -272px;
+        z-index: -1;
+    }
+
+    .bg-top{
+        width: 312px;
+        height: 468px;
+        top: -40px;
+        right: 0;
+    }
+
+    .header{
+        margin: 62px 165px 321px;
+    }
+
+    .header-title{
+        font-size: 88px;
+        line-height: 88px;        
+        letter-spacing: -1px;
+        margin-top: 127px;
+        width: 1015px;
+    }
+
+    .header-text{
+        font-size: 20px;
+        line-height: 34px;
+        width: 825px;
+        margin-top: 40px;
+    }
+
+
+    .main{
+        margin:0 165px;
+    }
+
+    .main-bg{
+        width: 312px;
+        height: 468px;
+        margin: 0 462px 172px 336px;
+    }
+
+    .main-app{
+        width: 280px;
+        height: 606px;
+        margin: -194px 696px 188px 134px;
+    }
+
+    .premium{
+        padding: 58px 59px 48px 54px;
+        margin: -509px 68px auto 738px;
+        width: 446px;
+    }
+
+    .premium-title{
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .premium-text{
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 22px;
+    }
+
+    .premium-middle{
+        margin: 39px 0 46px;
+    }
+
+    .ios-button{
+        padding: 15px 95px;
+    }
+
+    .android-button{
+        padding: 15px 76px;
+    }
+
+
+
+
+    .footer{
+        padding: 87px 165px 91px;
+    }
+
+    .footer_items{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo{
+        margin-right: 138px;
+    }
+
+    .footer-text{
+        width: 366px;
+    }
+
+    .footer-mail{
+        display: inline;
+    }
+        
+}
